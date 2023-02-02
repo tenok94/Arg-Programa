@@ -1,0 +1,62 @@
+*{
+    background: #bbbbbb;
+    box-sizing: border-box;
+    border: 0;
+    padding: 0;
+    font-family: 'Times New Roman', Times, serif;
+
+}
+
+.h1-titulo{
+    text-align: center;
+    font-size: 4em;
+    width: 940px;
+    font-weight: bold;
+}
+
+.banner-principal{
+    width: 100%;
+    height: auto;
+    border: black solid;
+}
+
+.btn-nav{
+    display: inline-block;
+    margin: 12px 10px 3px 0;
+    left: 900px;
+    top: 30px;
+    position: relative;
+}
+
+.btn-home, .btn-about, .btn-contact{
+    background: #A9C52F;
+}
+
+nav > a{
+    text-decoration: none;
+    background: #1684A7;
+    border: solid;
+    border-color: black;
+    border-width: 1px;
+    color: #F6F6F6;
+    font-size: 1.2em;
+    margin: 1.5px;
+    padding: 5px;
+
+}
+
+.sec-titulo{
+    text-align: center;
+    border: solid;
+}
+
+.logo{
+    width: 120px;
+    float: left;
+    margin: 50px 20px 140px 0;
+}
+
+.hockey1, .hockey2{
+    width: 540px;
+
+}
