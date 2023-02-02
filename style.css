@@ -1,9 +1,11 @@
 *{
-    background: #bbbbbb;
+    background-color: #B2B1B9;
+    ;
     box-sizing: border-box;
     border: 0;
     padding: 0;
     font-family: 'Times New Roman', Times, serif;
+    margin: 0;
 
 }
 
@@ -60,3 +62,39 @@ nav > a{
     width: 540px;
 
 }
+
+/*------------------------style para rule.html-----------------------------------------------*/
+
+.div-rule{
+    text-align: center;
+    margin-top: 20px;
+
+}
+
+.section-rule{
+    margin-top: 3rem;
+}
+
+ol, ul{
+    list-style-position: inside;
+    
+}
+
+dt:first-child{
+    font-weight: bold;
+    margin-left: 6.5rem;
+    margin-top: 2rem;
+}
+
+dd:nth-child(2){
+    margin-left: 6.5rem;
+    margin-right: 6.5rem;
+    margin-top: 20px;
+}
+
+.lista-2 {
+    margin-top: 20px;
+}
+
+/*------------------------style para game_info.html-----------------------------------------------*/
+
