@@ -1,6 +1,5 @@
-*{
+*:not(table, td, th, tr, b){
     background-color: #B2B1B9;
-    ;
     box-sizing: border-box;
     border: 0;
     padding: 0;
@@ -80,13 +79,13 @@ ol, ul{
     
 }
 
-dt:first-child{
+.dt-rule{
     font-weight: bold;
     margin-left: 6.5rem;
     margin-top: 2rem;
 }
 
-dd:nth-child(2){
+.dd-rule{
     margin-left: 6.5rem;
     margin-right: 6.5rem;
     margin-top: 20px;
@@ -98,3 +97,44 @@ dd:nth-child(2){
 
 /*------------------------style para game_info.html-----------------------------------------------*/
 
+.titulo-game-info{
+    text-align: center;
+
+}
+
+.dt-game-info{
+    font-weight: lighter; 
+    margin: 20px 0 0 6.5rem;
+    
+}
+
+.dd-game-info{
+    margin: 20px 0 2rem 6.5rem;
+}
+
+.dt-game-info-email{
+    text-align: right;
+
+}
+
+table, tr, td, th{
+    background-color: #5900ff;
+    border: 1px solid #B53FE0;
+}
+
+.tabla{
+    margin: 20px 0 2rem 6.5rem;
+}
+
+tbody{
+    color: #4b1f22;
+}
+
+.colum{
+    width: 9rem;
+}
+
+th{
+    height: 3rem;
+    font-weight: lighter;
+}
