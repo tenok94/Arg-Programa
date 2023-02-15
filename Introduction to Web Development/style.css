@@ -1,5 +1,5 @@
 *:not(table, td, th, tr, b){
-    background-color: #B2B1B9;
+    background-image: url(../Arg-Progrma-Curso/Imagenes/fondo.png);
     box-sizing: border-box;
     border: 0;
     padding: 0;
