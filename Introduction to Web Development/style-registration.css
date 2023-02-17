@@ -1,0 +1,35 @@
+h2{
+    text-align: center;
+}
+
+nav > a{
+
+    text-decoration: none;
+    background: #1684A7;
+    border: solid;
+    border-color: black;
+    border-width: 1px;
+    color: #F6F6F6;
+    font-size: 1.2em;
+    margin: 1.5px;
+    padding: 5px;
+
+}
+
+.btn-nav{
+    display: flex;
+    justify-content: flex-end;
+    margin: 12px 10px 3px 0;
+}
+
+.btn-home, .btn-about, .btn-contact{
+    background: #A9C52F;
+}
+
+div{
+    padding: 5px;
+}
+
+span{
+    font-weight: bold ;
+}

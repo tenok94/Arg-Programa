@@ -1,5 +1,5 @@
 *:not(table, td, th, tr, b){
-    background-image: url(../Arg-Progrma-Curso/Imagenes/fondo.png);
+    background-color: #B2B1B9;
     box-sizing: border-box;
     border: 0;
     padding: 0;
@@ -22,18 +22,18 @@
 }
 
 .btn-nav{
-    display: inline-block;
+    display: flex;
+    justify-content: flex-end;
     margin: 12px 10px 3px 0;
-    left: 900px;
-    top: 30px;
-    position: relative;
 }
 
 .btn-home, .btn-about, .btn-contact{
     background: #A9C52F;
 }
 
+
 nav > a{
+
     text-decoration: none;
     background: #1684A7;
     border: solid;
@@ -44,6 +44,23 @@ nav > a{
     margin: 1.5px;
     padding: 5px;
 
+}
+
+.sec-principal{
+    display: flex;
+    align-items: center;
+}
+
+.sec-contacto{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+
+.sec-about{
+    display: flex;
+    align-items: flex-start;
 }
 
 .sec-titulo{
@@ -61,6 +78,8 @@ nav > a{
     width: 540px;
 
 }
+
+
 
 /*------------------------style para rule.html-----------------------------------------------*/
 
@@ -108,7 +127,7 @@ ol, ul{
     
 }
 
-.dd-game-info{
+.dd-game-info, dd{
     margin: 20px 0 2rem 6.5rem;
 }
 
@@ -144,3 +163,5 @@ th{
     width: 940px;
     margin: 0 auto;
 }
+
+/*------------------------style para registration.html-----------------------------------------------*/

@@ -4,108 +4,174 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./StyleRegistration.css">
-    <title>Document</title>
+    <link rel="stylesheet" href="./style-registration.css">
+    <link rel="shortcut icon" href="./Imagenes/Logo_Mighty_ducks-01.png" type="image/x-icon">
+    <title>Mighty Ducks</title>
 </head>
 <body>
+    <header>
+        <h2>Formulario</h2>
+        <nav class="btn-nav">
+            <a href="./index.html">Home</a>
+            <a href="./aboutMDHL.html">About MDHL</a>
+            <a href="./contact.html">Contact</a>
+            <a href="./rule.html">Rule</a>
+            <a href="./game_info.html">Game Info</a>
+            <a class="btn-home" href="#">Registration</a>
+        </nav>
+    </header>
+
     <main>
-        <div class="form_Container">
-            <form action="">
-                <fieldset>
-                    <legend><b>Registration Form</b></legend>
+        <form action="./show-data.html" method="get">
+            <fieldset>
+                <legend>Registration Form</legend>
+                <div>
+                    <label class="lb-1">
+                        <span>Player's First Name:</span>
+                        <input type="text" name="Name" id="Name">
+                    </label>
+
+                    <label class="lb-1">
+                        <span>Last Name</span>
+                        <input type="text" name="Last_Name" id="Last_Name">
+                    </label>
+                </div>
+
+                <div>
+                    <label class="lb-2">
+                        <span>Street Adreess:</span>
+                        <input type="text" name="Street_Address" id="Street_Address">
+                    </label>
+                </div>
+
+                <div class="lb-3">
+                    <label>
+                        <span>City:</span>
+                        <input type="text" name="City" id="City">
+                    </label> 
+    
+                    <label>
+                        <span>Zip Code:</span>
+                        <input type="text" name="Zip_Code" id="Zip_Code">
+                    </label>
+                </div>
+                
+                <div>
+                    <label class="lb-4">
+                        <span>Birth Date:</span>
+                        <input type="text" name="Birth_Date" id="Birth_Date">
+                    </label>
+    
+                    <label class="lb-4">
+                        <span>Gender</span>
+                        <input id="female" name="Gender" class="radio" type="radio" value="Female">
+                        <span class="choice">Female</span>
+                        <input id="male" name="Male" class="radio" type="radio" value="Male">
+                        <span class="choice">Male</span>
+                    </label>
+                </div>
+                
+                <div>
+                    <label class="lb-5">
+                        <span>Grade</span>
+                        <input id="pre_school" name="Grade" class="radio" type="radio" value="Pre_school">
+                        <span class="choice">Pre_school</span>
+    
+                        <input id="1st" name="Grade" class="radio" type="radio" value="1st">
+                        <span class="choice">1st</span>
+    
+                        <input id="2nd" name="Grade" class="radio" type="radio" value="2nd">
+                        <span class="choice">2nd</span>
+    
+                        <input id="3rd" name="Grade" class="radio" type="radio" value="3rd">
+                        <span class="choice">3rd</span>
+    
+                        <input id="4th" name="Grade" class="radio" type="radio" value="4th">
+                        <span class="choice">4th</span>
+    
+                        <input id="5th" name="Grade" class="radio" type="radio" value="5th">
+                        <span class="choice">5th</span>
+                    </label>
+                </div>
+                
+            </fieldset>
+
+            <fieldset>
+                <legend>Which elementary school do you live near?</legend>
+                <div>
+                    <span>Closest School:</span><br>
+                        <label>
+                            <input id="Katzenmaier" name="School" class="element radio" type="radio" value="AJ Katzenmaier" />
+                            <span class="choice">AJ Katzenmaier</span>
+                            <input id="Greenbay" name="School" class="element radio" type="radio" value="Greenbay" />
+                            <span class="choice">Greenbay</span>
+                            <input id="howard_a_yeager" name="School" class="element radio" type="radio" value="Howard A Yeager" />
+                            <span class="choice">Howard A Yeager</span>
+                        </label>
+
+                        <label>
+                            <input id="marjorie_p_hart" name="School" class="element radio" type="radio" value="Marjorie P Hart" />
+                            <span class="choice">Marjorie P Hart</span>
+                            <input id="north_elementary" name="School" class="element radio" type="radio" value="North Elementary" />
+                            <span class="choice">North Elementary</span>
+                            <input id="south_elementary" name="School" class="element radio" type="radio" value="South Elementary" />
+                            <span class="choice">South Elementary</span>
+                        </label>
+                    
+                    
+                </div>
+
+                <label>
+                    <span>What position(s) do you normally play? (check all that apply):</span>
                     <div>
-                        <label class="description" for="element_1"><b>Player's First Name:</b></label>
-                        <input id="element_1" name="element_1" class="element text medium" type="text"/>&ensp;
-                        
-                        <label class="description" for="element_2"><b>Last Name:</b></label>
-                        <input id="element_2" name="element_2" class="element text medium" type="text"/>&ensp;
-    
-                        <label class="description" for="element_3"><b>Street Address:</b></label>
-                        <input id="element_3" name="element_3" class="element text medium" type="text"/>
+                        <div>
+                            <input id="Forward" name="position" class="element radio" type="radio" value="Forward" />
+                            <span class="choice">Forward</span>
+                            <input id="Defense" name="position" class="element radio" type="radio" value="Defense" />
+                            <span class="choice">Defense</span>
+                        </div>
+
+                        <div>
+                            <input id="Midfield" name="position" class="element radio" type="radio" value="Midfield" />
+                            <span class="choice">Midfield</span>
+                            <input id="Goalkeeper" name="position" class="element radio" type="radio" value="Goalkeeper" />
+                            <span class="choice">Goalkeeper</span>
+                        </div>
                     </div>
-                     
-                    <div><br>
-                        <label class="description" for="element_4"><b>City:</b></label>
-                        <input id="element_4" name="element_4" class="element text medium" type="text"/>&ensp;
-    
-                        <label class="description" for="element_5"><b>Zip Code:</b></label>
-                        <input id="element_5" name="element_5" class="element text medium" type="text"/> 
+                    
+                    
+                </label>
+
+                <label>
+                    <span>Uniform Size:</span>  
+                    <div>
+                        <div>
+                            <input id="youth_small" name="Uniform_Size" class="element radio" type="radio" value="Youth Small" />
+                            <span class="choice">Youth Small</span>
+                            <input id="youth" name="Uniform_Size" class="element radio" type="radio" value="Youth" />
+                            <span class="choice">Youth Medum</span>
+                            <input id="youth_large" name="Uniform_Size" class="element radio" type="radio" value="Youth Large" />
+                            <span class="choice">Youth Large</span>
+                            <input id="sall" name="Uniform_Size" class="element radio" type="radio" value="Sall" />
+                            <span class="choice">Sall</span>
+                        </div>
+                            
+                        <div>
+                            <input id="element_3_6" name="Uniform_Size" class="element radio" type="radio" value="Medium" />
+                            <span class="choice">Medium</span>
+                            <input id="element_3_7" name="Uniform_Size" class="element radio" type="radio" value="Large" />
+                            <span class="choice">Large</span>
+                            <input id="element_3_8" name="Uniform_Size" class="element radio" type="radio" value="Extra-Large" />
+                            <span class="choice">Extra-Large</span>
+                        </div>
                     </div>
-    
-                    <div><br>
-                        <label class="description" for="element_6"><b>Birth Date(mm/dd/yyyy):</b></label>
-                        <input id="element_6" name="element_6" class="element text medium" type="text"/> &ensp; <!--"&ensp;" inserta un espacio-->
-    
-                        <label class="description" for="element_7"><b>Gender</b></label>
-                        <input id="element_7_1" name="element_7_1" class="element checkbox" type="checkbox" value="1" />
-                        <label class="choice" for="element_7_1">Male</label>
-                        <input id="element_7_2" name="element_7_2" class="element checkbox" type="checkbox" value="1" />
-                        <label class="choice" for="element_7_2">Female</label>	
-                    </div>
-    
-                    <div><br>
-                        <label class="description" for="element_8"><b>Grade:</b></label>
-                        <input id="element_8_1" name="element_8_1" class="element checkbox" type="checkbox" value="1" />
-                        <label class="choice" for="element_8_1">Pre-School</label>
-                        <input id="element_8_2" name="element_8_2" class="element checkbox" type="checkbox" value="1" />
-                        <label class="choice" for="element_8_2">1st</label>
-                        <input id="element_8_3" name="element_8_3" class="element checkbox" type="checkbox" value="1" />
-                        <label class="choice" for="element_8_3">2nd</label>
-                        <input id="element_8_4" name="element_8_4" class="element checkbox" type="checkbox" value="1" />
-                        <label class="choice" for="element_8_4">3rd</label>
-                        <input id="element_8_5" name="element_8_5" class="element checkbox" type="checkbox" value="1" />
-                        <label class="choice" for="element_8_5">4th</label>
-                        <input id="element_8_6" name="element_8_6" class="element checkbox" type="checkbox" value="1" />
-                        <label class="choice" for="element_8_6">5th</label><br>
-    
-                        <h2>Which elementary school do you live near?</h2>
-    
-                        <label class="description" for="element_1"><b>Closest School:</b></label><br>
-                        <input id="element_1_1" name="element_1" class="element radio" type="radio" value="1" />
-                        <label class="choice" for="element_1_1">AJ Katzenmaier</label>
-                        <input id="element_1_2" name="element_1" class="element radio" type="radio" value="2" />
-                        <label class="choice" for="element_1_2">Greenbay</label><br>
-                        <input id="element_1_3" name="element_1" class="element radio" type="radio" value="3" />
-                        <label class="choice" for="element_1_3">Howard A Yeager</label>
-                        <input id="element_1_4" name="element_1" class="element radio" type="radio" value="4" />
-                        <label class="choice" for="element_1_4">Marjorie P Hart</label><br>
-                        <input id="element_1_5" name="element_1" class="element radio" type="radio" value="5" />
-                        <label class="choice" for="element_1_5">North Elementary</label>
-                        <input id="element_1_6" name="element_1" class="element radio" type="radio" value="6" />
-                        <label class="choice" for="element_1_6">South Elementary</label><br><br>
-    
-                        <label class="description" for="element_2"><b>What position(s) do you normally play? (check all that apply)</b></label><br> 
-                        <input id="element_2_1" name="element_2" class="element radio" type="radio" value="1" />
-                        <label class="choice" for="element_2_1">Forward</label>
-                        <input id="element_2_2" name="element_2" class="element radio" type="radio" value="2" />
-                        <label class="choice" for="element_2_2">Defense</label>
-                        <input id="element_2_3" name="element_2" class="element radio" type="radio" value="3" />
-                        <label class="choice" for="element_2_3">Midfield</label>
-                        <input id="element_2_4" name="element_2" class="element radio" type="radio" value="4" />
-                        <label class="choice" for="element_2_4">Goalkeeper</label><br><br>
-    
-                        <label class="description" for="element_3"><b>Uniform Size:</b></label><br>
-                        <input id="element_3_1" name="element_3" class="element radio" type="radio" value="1" />
-                        <label class="choice" for="element_3_1">Youth Smal</label>
-                        <input id="element_3_2" name="element_3" class="element radio" type="radio" value="2" />
-                        <label class="choice" for="element_3_2">Youth Medium</label>
-                        <input id="element_3_3" name="element_3" class="element radio" type="radio" value="3" />
-                        <label class="choice" for="element_3_3">Youth Large</label>
-                        <input id="element_3_4" name="element_3" class="element radio" type="radio" value="4" />
-                        <label class="choice" for="element_3_4">Small</label>
-                        <input id="element_3_5" name="element_3" class="element radio" type="radio" value="5" />
-                        <label class="choice" for="element_3_5">Medium</label>
-                        <input id="element_3_6" name="element_3" class="element radio" type="radio" value="6" />
-                        <label class="choice" for="element_3_6">Large</label>
-                        <input id="element_3_7" name="element_3" class="element radio" type="radio" value="7" />
-                        <label class="choice" for="element_3_7">Extra-Large</label>
-    
-                    </div>
-                        
-                </fieldset>
-            </form>
-        </div>
-        
+
+                </label>
+
+            </fieldset>
+
+            <input type="submit" value="Enviar">
+        </form>
     </main>
 </body>
 </html>

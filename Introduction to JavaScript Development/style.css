@@ -1,0 +1,17 @@
+.logo-RAE{
+    width: 50%;
+}
+
+a, li, ul{
+    list-style:none;
+    text-decoration: none;
+    display: flex;
+    align-items: baseline;
+}
+
+.btn, .btn-1{
+    border-radius: 50px;
+    border: solid #000000 1.5px;
+    background: white;
+    margin: 0  10px 0 0;
+}
